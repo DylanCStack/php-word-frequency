@@ -1,8 +1,9 @@
 <?php
-    class RepeatCounter{
-        function CountRepeats()
-        {
 
+    class RepeatCounter{
+        function CountRepeats($search_with, $search_through)
+        {
+            
         }
     }
 ?>
