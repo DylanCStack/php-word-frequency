@@ -18,15 +18,16 @@
     $app->post("/results", function() use ($app) {
         $counter = new RepeatCounter;
         $result = 0;
-        if($_POST["partial_search"])
+        if($_POST["partial_search"] == "true")
         {
             $result = $counter->CountPartialRepeats($_POST['search_with'], $_POST['search_through']);
         } else {
             $result = $counter->CountRepeats($_POST['search_with'], $_POST['search_through']);
         }
-        $result = $counter->CountRepeats($_POST['search_with'], $_POST['search_through']);
+        
         return $app['twig']->render("results.html.twig",array("matches" => $result, "input1"=>$_POST['search_with'], "input2"=>$_POST['search_through']));
     });
+
 
     return $app;
 ?>
