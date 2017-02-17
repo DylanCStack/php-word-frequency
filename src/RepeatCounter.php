@@ -52,7 +52,7 @@
                 $word = str_replace(")","", $word);
                 $word = str_replace("[","", $word);
                 $word = str_replace("]","", $word);
-                var_dump($word);
+                
 
                 if($word == $search_with){
                     $result ++;
