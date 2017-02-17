@@ -55,7 +55,6 @@
                 var_dump($word);
 
                 if($word == $search_with){
-                    var_dump("MATCH: ".$word);
                     $result ++;
                 }
             }
