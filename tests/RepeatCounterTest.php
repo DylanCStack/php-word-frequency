@@ -22,5 +22,14 @@
             $result = $counter->CountRepeats($input1, $input2);
             $this->assertEquals(3, $result);
         }
+        function test_find_one_word()
+        {
+            $counter = new RepeatCounter;
+            $input1 = "lucky";
+            $input2 = "You feelin' lucky, punk?";
+
+            $result = $counter->CountRepeats($input1, $input2);
+            $this->assertEquals(1, $result);
+        }
     }
 ?>
