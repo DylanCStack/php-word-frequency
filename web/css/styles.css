@@ -1,0 +1,17 @@
+body {
+    background: rgba(15, 15, 15, 1);
+    color:#808080;
+}
+
+.input1 {
+    color:lightgreen;
+}
+.input2 {
+    color:skyblue;
+}
+.results {
+    color:salmon;
+}
+input, textarea {
+    opacity: 0.8;
+}
