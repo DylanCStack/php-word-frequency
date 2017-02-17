@@ -4,10 +4,10 @@
         function CountRepeats($search_with, $search_through)
         {
             $result = 0;
-            $potential_match = "";
             var_dump($search_with);
             for($i=0; $i<strlen($search_through) - strlen($search_with) + 1; $i++)
             {
+                $potential_match = "";
                 var_dump( $search_with." at "."i: ". $i ." ".$search_through[$i]);
                 if ($search_with[0]==$search_through[$i])
                 {
@@ -30,6 +30,8 @@
 
                     }
 
+                } else {
+                    $potential_match = "";
                 }
             }
 

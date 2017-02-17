@@ -31,5 +31,14 @@
             $result = $counter->CountRepeats($input1, $input2);
             $this->assertEquals(1, $result);
         }
+        function test_find_multiple_of_word()
+        {
+            $counter = new RepeatCounter;
+            $input1 = "wast";
+            $input2 = "Almost nothing was more annoying than having our wasted time wasted on something not worth wasting it on.";
+
+            $result = $counter->CountRepeats($input1, $input2);
+            $this->assertEquals(3, $result);
+        }
     }
 ?>
