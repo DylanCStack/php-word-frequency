@@ -29,3 +29,5 @@ A website through which the user inputs two strings, one to search through, and 
     * Input: "word":"word word wordy wordy words. word."
     * Output: 3
     Inputs choses to show that partial matches will not be detected.
+
+##Copyright (c) 2017 Dylan Stackhouse, licensed under the GPL
