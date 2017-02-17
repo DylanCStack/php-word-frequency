@@ -17,22 +17,14 @@
                         if($search_with[$j]==$search_through[$i + $j])
                         {
                             $potential_match .= $search_through[$i + $j];
-                        } else {
-                            $potential_match = "";
                         }
                         if($potential_match == $search_with)
                         {
                             $result ++;
-                            $potential_match = "";
                         }
-
                     }
-
-                } else {
-                    $potential_match = "";
                 }
             }
-
             return $result;
         }
         function CountRepeats($search_with, $search_through)
@@ -40,8 +32,6 @@
             $result = 0;
             $search_with = strtoupper($search_with);
             $search_through = explode(" ",strtoupper($search_through));
-
-
 
             foreach ($search_through as $word) {
                 $word = str_replace(".","", $word);
@@ -52,7 +42,6 @@
                 $word = str_replace(")","", $word);
                 $word = str_replace("[","", $word);
                 $word = str_replace("]","", $word);
-                
 
                 if($word == $search_with){
                     $result ++;
