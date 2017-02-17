@@ -25,3 +25,7 @@ A website through which the user inputs two strings, one to search through, and 
         * Example found online, quote from "Then We Came to the End" by Joshua Ferris.
     * Output: 2
     Inputs chosen to specifically match multiple times to show functionality.
+4. The program will allow the user to select to search for partial matches or full words only.
+    * Input: "word":"word word wordy wordy words. word."
+    * Output: 3
+    Inputs choses to show that partial matches will not be detected.
