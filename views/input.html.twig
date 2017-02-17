@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <title>Word Search</title>
     </head>
     <body>
+        <div class="container">
+            <h1>Word Frequency</h1>
+            <form action="/results" method="post">
+                <div class="form-group">
+                    <label for="search_with">Word to search for:</label>
+                    <input class="form-control" type="text" name="search_with">
+                </div>
+                <div class="form-group">
+                    <label for="search_through">Text to search through:</label>
+                    <textarea class="form-control" type="text" name="search_through" placeholder="You can enter anything here. A quote form your favorite book or movie, that song you have stuck in your head, or maybe something your boss said to you this morning." rows="6" cols="70"></textarea>
+                </div>
+                <button class="btn btn-info" type="submit">Search</button>
+            </form>
+        </div>
 
     </body>
 </html>
