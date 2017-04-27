@@ -1,19 +1,19 @@
-#Word Search
-###Authored by Dylan Stackhouse, 2/17/17.
-##Description
+# Word Search
+### Authored by Dylan Stackhouse, 2/17/17.
+## Description
 A website through which the user inputs two strings, one to search through, and one to search for. The website will return to the user how many iterations of their search string was found in their second input.
 
-###Requirements
+### Requirements
 This site requires some programs and frameworks to be installed on your computer in order to run it.
 * PHP 5
 * Composer
 * A terminal shell (apple computers will have this by default)
 * A web browser
 
-##Setup
+## Setup
 Download or clone the repository from [here](https://github.com/DylanCStack/php-word-frequency). Then in a terminal shell navigate into the folder and run '$composer install'. Next navigate to the web folder and run '$php -S localhost:8000'. Finally, navigate to localhost:8000 in your web browser of choice.
 
-##Specifications
+## Specifications
 1. The program will return if a given character appears in a string:
     * Input: "c":"catastrophe"
     * Output: 1
@@ -44,4 +44,4 @@ Download or clone the repository from [here](https://github.com/DylanCStack/php-
 
     Inputs choses to show that partial matches will not be detected.
 
-##Copyright (c) 2017 Dylan Stackhouse, licensed under the GPL
+## Copyright (c) 2017 Dylan Stackhouse, licensed under the GPL
